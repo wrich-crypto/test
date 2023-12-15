@@ -24,7 +24,7 @@ import (
 var (
 	infuraURL       = "https://eth-mainnet.g.alchemy.com/v2/FL6BaqcJywosW4svjdO4oje47zbP45Yq"
 	privateKeystr   = "私钥私钥私钥"
-	workerCount     = 10
+	workerCount     = 16
 	logger          = logrus.New()
 	gasTipCap       = 1000000000 // 1 Gwei 小费gas
     gasFeeCap       = 256000000000 // 256 Gwei max gas
@@ -34,7 +34,7 @@ var (
 )
 
 func getNonceDate(nonce int64) string {
-	return "data:application/json,{\"p\":\"ierc-20\",\"op\":\"mint\",\"tick\":\"electron\",\"amt\":\"1000\",\"nonce\":\"" + strconv.FormatInt(nonce, 10) + "\"}"
+	return "data:application/json,{\"p\":\"ierc-20\",\"op\":\"mint\",\"tick\":\"electron\",\"amt\":\"54600\",\"nonce\":\"" + strconv.FormatInt(nonce, 10) + "\"}"
 }
 
 var (
